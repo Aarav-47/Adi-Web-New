@@ -1,0 +1,119 @@
+{
+  "project_name": "Aditiri Arya - Chhathi Samaroh Invitation",
+  "theme": "Luxury Pink + Royal Princess + Floral Baby + Cute Teddy",
+  "archetype": "Hybrid of Archetype 3 (Pastel & Soft) & Archetype 5 (Jewel & Luxury)",
+  "vibe": "Cinematic, emotional, magical, interactive, high-end premium.",
+  "typography": {
+    "google_fonts_import": "@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Anek+Devanagari:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap');",
+    "fonts": {
+      "english_heading": "font-family: 'Cormorant Garamond', serif;",
+      "hindi_heading": "font-family: 'Tiro Devanagari Hindi', serif;",
+      "english_body": "font-family: 'Outfit', sans-serif;",
+      "hindi_body": "font-family: 'Anek Devanagari', sans-serif;",
+      "script_accent": "font-family: 'Amita', cursive;"
+    },
+    "hierarchy_rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "h3": "text-xl sm:text-2xl",
+      "body": "text-base leading-relaxed tracking-wide",
+      "overline": "text-xs sm:text-sm tracking-[0.2em] uppercase font-medium"
+    }
+  },
+  "colors": {
+    "primary": {
+      "base": "#FDFBF7",
+      "description": "Pearl White for the main background to keep it airy and elegant."
+    },
+    "secondary": {
+      "base": "#F8F0F2",
+      "description": "Soft Baby Blush Pink for sections and cards."
+    },
+    "accent": {
+      "gold": "#D4AF37",
+      "rose_gold": "#B76E79",
+      "deep_rose": "#4A3B42",
+      "description": "Gold and Rose Gold for borders, glowing effects, and accents. Deep Rose Charcoal for text (Never use pure black)."
+    },
+    "interactive": {
+      "button_bg": "#D4AF37",
+      "button_text": "#FFFFFF",
+      "button_hover": "#C5A028"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy. Use 2-3x more spacing than standard. Lots of breathing room.",
+    "section_padding": "py-20 sm:py-32 px-6 sm:px-12",
+    "container": "max-w-3xl mx-auto",
+    "border_radius": "rounded-3xl sm:rounded-[2.5rem]",
+    "shadows": "shadow-[0_8px_32px_rgba(183,110,121,0.1)] for cards"
+  },
+  "media": {
+    "ganesha": {
+      "url": "https://images.unsplash.com/photo-1758210125253-1974471bb697?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxoaW5kdSUyMGdhbmVzaGElMjBpZG9sJTIwZ29sZHxlbnwwfHx8fDE3Nzg0MzA1MTF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Ganesha idol for the welcome splash screen. Apply a drop-shadow and soft gold glow."
+    },
+    "baby_placeholders": [
+      "https://images.unsplash.com/photo-1625485796924-24a62316bc52?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxjdXRlJTIwYmFieSUyMGdpcmwlMjBwaW5rJTIwZHJlc3N8ZW58MHx8fHwxNzc4NDMwNDkyfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1620849579061-78691de60f88?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHw0fHxjdXRlJTIwYmFieSUyMGdpcmwlMjBwaW5rJTIwZHJlc3N8ZW58MHx8fHwxNzc4NDMwNDkyfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1625485818856-e3a60c52de26?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxjdXRlJTIwYmFieSUyMGdpcmwlMjBwaW5rJTIwZHJlc3N8ZW58MHx8fHwxNzc4NDMwNDkyfDA&ixlib=rb-4.1.0&q=85"
+    ],
+    "textures": {
+      "floral_background": "https://images.unsplash.com/photo-1682587368650-40a601316178?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBwaW5rJTIwZmxvcmFsJTIwdGV4dHVyZXxlbnwwfHx8fDE3Nzg0MzA0OTJ8MA&ixlib=rb-4.1.0&q=85",
+      "champagne_sparkles": "https://images.unsplash.com/photo-1625247509696-2b8bb610675e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxjaGFtcGFnbmUlMjBwaW5rJTIwYm9rZWglMjBzcGFya2xlc3xlbnwwfHx8fDE3Nzg0MzA1MTF8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "teddy_motif": {
+      "url": "https://images.pexels.com/photos/35302416/pexels-photo-35302416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Teddy bear motif to be used in 'Meet Our Princess' section as a side decoration."
+    }
+  },
+  "animations": {
+    "particles": "Use Framer Motion to create a global ParticleBackground component with floating petals/sparkles continuously moving upwards with varying opacities and delays.",
+    "scroll_reveal": "Wrap every section in a motion.div with whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} transition={{ duration: 0.8, ease: 'easeOut' }} viewport={{ once: true, margin: '-100px' }}.",
+    "image_reveal": "Images should have a slow scale-down effect inside a hidden overflow container to create a cinematic parallax reveal.",
+    "glow_pulse": "Apply a subtle infinite drop-shadow pulse to the Ganesha idol and key buttons."
+  },
+  "components": [
+    {
+      "name": "WelcomeSplash",
+      "description": "Full screen intro. Shows Ganesha image, 'ॐ श्री गणेशाय नमः', and Language Selection (English / हिंदी). Must unmount or fade out entirely upon selection to reveal the main app.",
+      "test_id": "welcome-splash"
+    },
+    {
+      "name": "AudioController",
+      "description": "Fixed floating button at top right. Toggles ambient background music. Use an HTML5 <audio> element. Button rotates when playing.",
+      "test_id": "audio-toggle"
+    },
+    {
+      "name": "HeroSection",
+      "description": "Full height mobile-first hero. Background has the floral_background texture with very low opacity. 'Little Princess Has Arrived' / 'हमारी नन्ही परी आ गई है'. Main baby placeholder image in a gold-bordered oval or arch frame.",
+      "test_id": "hero-section"
+    },
+    {
+      "name": "EventDetails",
+      "description": "Shows Ceremony Date (19-05-2026), Time (7 PM). Includes a Live Countdown Timer component (days, hours, mins, secs).",
+      "test_id": "event-details"
+    },
+    {
+      "name": "MemoryGallery",
+      "description": "Horizontal scrolling carousel of baby placeholders. Use Framer Motion drag='x' or standard flex-overflow with hide-scrollbar. Images must have rounded-2xl and soft shadows.",
+      "test_id": "memory-gallery"
+    },
+    {
+      "name": "LocationRSVP",
+      "description": "Address: House A/9 Biscoman Colony, Patna. Embedded generic Google Map iframe. Buttons for 'Get Directions' (links to maps) and 'WhatsApp RSVP' (links to wa.me).",
+      "test_id": "location-rsvp"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Ensure all components use the `data-testid` attribute exactly as specified or intuitively for other interactive elements.",
+    "The entire site must be bilingual. Create a simple Context or state variable `language` ('en' or 'hi') to swap text instantly.",
+    "Use Tailwind's arbitrary values for specific colors if needed (e.g., `text-[#4A3B42]`).",
+    "Never use pure black for text or overlays. Use `bg-[#4A3B42]/50` for overlays if needed.",
+    "Prioritize mobile viewport. Desktop should look like a centered beautiful card/phone-view or expansive cinematic view, but all touch targets must be mobile-optimized.",
+    "Use Lucide-React for icons (Play/Pause, Map Pin, Phone, Share).",
+    "Apply `font-['Cormorant_Garamond']` or `font-['Tiro_Devanagari_Hindi']` dynamically based on language state for headings.",
+    "For the map, use a standard Google Maps iframe embed with a generic Patna coordinate if exact isn't rendering nicely.",
+    "Implement the live countdown in standard React useEffect."
+  ]
+}
