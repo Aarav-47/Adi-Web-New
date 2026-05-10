@@ -57,8 +57,8 @@
     "zod": "^3.24.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
+    "start": "node patch.js && craco start",
+    "build": "node patch.js && craco build",
     "test": "craco test"
   },
   "browserslist": {
@@ -89,9 +89,5 @@
   },
   "engines": {
     "node": "20.x"
-  },
-  "overrides": {
-    "ajv": "6.12.6",
-    "schema-utils": "3.2.0"
   }
 }
