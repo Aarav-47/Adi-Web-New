@@ -990,6 +990,7 @@ const InvitationCardGenerator = () => {
     } finally {
       setGenerating(false);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang]);
 
   return (
