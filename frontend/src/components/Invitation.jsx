@@ -368,17 +368,58 @@ const Family = () => {
           />
         </div>
 
-        {/* Great-Grandparents — centred */}
-        <div className="grid sm:grid-cols-2 gap-8 sm:gap-12">
-          <GreatGrandCard
-            label={t.greatgrandparents}
-            female={t.greatgrandmother}
-            male={t.greatgrandfather}
-            ampersand={t.ampersand}
-          />
-        </div>
-      </div>
-    </Section>
+      const GreatGrandCard = ({ label, female, male, ampersand }) => {
+  const { lang } = useLang();
+
+  return (
+    <motion.div
+      variants={reveal}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="glass-card rounded-3xl p-8 sm:col-span-2 max-w-[640px] mx-auto w-full"
+      style={{ borderLeft: "2px solid rgba(212,175,55,0.4)" }}
+    >
+      <p
+        className={`text-[10px] uppercase text-[#8C4A56]/70 mb-4 whitespace-nowrap ${
+          lang === "hi"
+            ? "font-body-hi tracking-normal normal-case"
+            : "font-body-en tracking-[0.28em]"
+        }`}
+      >
+        {label}
+      </p>
+
+      <p
+        className={`text-xl sm:text-2xl text-[#4A3B42] mb-1 ${
+          lang === "hi"
+            ? "font-display-hi"
+            : "font-display-en italic"
+        }`}
+      >
+        {female}
+      </p>
+
+      <p
+        className={`text-xs text-[#B76E79] ${
+          lang === "hi"
+            ? "font-body-hi tracking-normal"
+            : "tracking-[0.3em]"
+        }`}
+      >
+        {ampersand}
+      </p>
+
+      <p
+        className={`text-xl sm:text-2xl text-[#4A3B42] mt-1 ${
+          lang === "hi"
+            ? "font-display-hi"
+            : "font-display-en italic"
+        }`}
+      >
+        {male}
+      </p>
+    </motion.div>
   );
 };
 
