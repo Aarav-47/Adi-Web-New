@@ -290,83 +290,9 @@ const EventDetails = () => {
 };
 
 /* ============ FAMILY — female first, + great-grandparents ============ */
+
 const FamilyCard = ({ label, female, male, ampersand }) => {
   const { lang } = useLang();
-  return (
-    <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true }} className="glass-card rounded-3xl p-8">
-      <p className={`text-[10px] uppercase text-[#8C4A56]/70 mb-4 ${lang === "hi" ? "font-body-hi tracking-normal normal-case" : "font-body-en tracking-[0.4em]"}`}>
-        {label}
-      </p>
-      <p className={`text-xl sm:text-2xl text-[#4A3B42] mb-1 ${lang === "hi" ? "font-display-hi" : "font-display-en italic"}`}>
-        {female}
-      </p>
-      <p className={`text-xs text-[#B76E79] ${lang === "hi" ? "font-body-hi tracking-normal" : "tracking-[0.3em]"}`}>{ampersand}</p>
-      <p className={`text-xl sm:text-2xl text-[#4A3B42] mt-1 ${lang === "hi" ? "font-display-hi" : "font-display-en italic"}`}>
-        {male}
-      </p>
-    </motion.div>
-  );
-};
-
-const GreatGrandCard = ({ label, female, male, ampersand }) => {
-  const { lang } = useLang();
-  return (
-    <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true }}
-      className="glass-card rounded-3xl p-6 col-span-full sm:col-span-1"
-      style={{ borderLeft: "2px solid rgba(212,175,55,0.4)" }}
-    >
-      <p className={`text-[10px] uppercase text-[#8C4A56]/70 mb-3 ${lang === "hi" ? "font-body-hi tracking-normal normal-case" : "font-body-en tracking-[0.4em]"}`}>
-        {label}
-      </p>
-      <p className={`text-lg sm:text-xl text-[#4A3B42]/80 mb-0.5 ${lang === "hi" ? "font-display-hi" : "font-display-en italic"}`}>
-        {female}
-      </p>
-      <p className={`text-xs text-[#B76E79] ${lang === "hi" ? "font-body-hi tracking-normal" : "tracking-[0.3em]"}`}>{ampersand}</p>
-      <p className={`text-lg sm:text-xl text-[#4A3B42]/80 mt-0.5 ${lang === "hi" ? "font-display-hi" : "font-display-en italic"}`}>
-        {male}
-      </p>
-    </motion.div>
-  );
-};
-
-const Family = () => {
-  const { lang } = useLang();
-  const t = T[lang].family;
-  return (
-    <Section testid="family-section" className="text-center">
-      <div className="max-w-3xl mx-auto relative">
-        <Eyebrow>{t.eyebrow}</Eyebrow>
-        <Heading className="mb-12">{t.title}</Heading>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="relative mx-auto w-44 mb-10"
-        >
-          <div className="rounded-full overflow-hidden gold-border aspect-square">
-            <img src={PHOTOS[4]} alt="Parents with Aditiri" loading="lazy" decoding="async" className="w-full h-full object-cover object-center" />
-          </div>
-        </motion.div>
-
-        {/* Parents & Grandparents */}
-        <div className="grid sm:grid-cols-2 gap-8 sm:gap-12 mb-8">
-          {/* Parents — mother first */}
-          <FamilyCard
-            label={t.parents}
-            female={t.mother}
-            male={t.father}
-            ampersand={t.ampersand}
-          />
-          {/* Grandparents — grandmother first */}
-          <FamilyCard
-            label={t.grandparents}
-            female={t.grandfather}
-            male={t.grandfatherMale}
-            ampersand={t.ampersand}
-          />
-        </div>
 
   return (
     <motion.div
@@ -374,14 +300,13 @@ const Family = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="glass-card rounded-3xl p-8 sm:col-span-2 max-w-[640px] mx-auto w-full"
-      style={{ borderLeft: "2px solid rgba(212,175,55,0.4)" }}
+      className="glass-card rounded-3xl p-8"
     >
       <p
-        className={`text-[10px] uppercase text-[#8C4A56]/70 mb-4 whitespace-nowrap ${
+        className={`text-[10px] uppercase text-[#8C4A56]/70 mb-4 ${
           lang === "hi"
             ? "font-body-hi tracking-normal normal-case"
-            : "font-body-en tracking-[0.28em]"
+            : "font-body-en tracking-[0.4em]"
         }`}
       >
         {label}
@@ -417,6 +342,133 @@ const Family = () => {
         {male}
       </p>
     </motion.div>
+  );
+};
+
+const GreatGrandCard = ({
+  label,
+  female,
+  male,
+  ampersand,
+}) => {
+  const { lang } = useLang();
+
+  return (
+    <motion.div
+      variants={reveal}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="glass-card rounded-3xl p-8 max-w-[640px] mx-auto w-full"
+      style={{
+        borderLeft: "2px solid rgba(212,175,55,0.4)",
+      }}
+    >
+      <p
+        className={`text-[12px] uppercase text-[#8C4A56]/70 mb-4 whitespace-nowrap ${
+          lang === "hi"
+            ? "font-body-hi tracking-normal normal-case"
+            : "font-body-en tracking-[0.28em]"
+        }`}
+      >
+        {label}
+      </p>
+
+      <p
+        className={`text-2xl sm:text-3xl text-[#4A3B42] mb-1 ${
+          lang === "hi"
+            ? "font-display-hi"
+            : "font-display-en italic"
+        }`}
+      >
+        {female}
+      </p>
+
+      <p
+        className={`text-sm text-[#B76E79] ${
+          lang === "hi"
+            ? "font-body-hi tracking-normal"
+            : "tracking-[0.3em]"
+        }`}
+      >
+        {ampersand}
+      </p>
+
+      <p
+        className={`text-2xl sm:text-3xl text-[#4A3B42] mt-1 ${
+          lang === "hi"
+            ? "font-display-hi"
+            : "font-display-en italic"
+        }`}
+      >
+        {male}
+      </p>
+    </motion.div>
+  );
+};
+
+const Family = () => {
+  const { lang } = useLang();
+  const t = T[lang].family;
+
+  return (
+    <Section
+      testid="family-section"
+      className="text-center"
+    >
+      <div className="max-w-3xl mx-auto relative">
+        <Eyebrow>{t.eyebrow}</Eyebrow>
+
+        <Heading className="mb-12">
+          {t.title}
+        </Heading>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="relative mx-auto w-44 mb-10"
+        >
+          <div className="rounded-full overflow-hidden gold-border aspect-square">
+            <img
+              src={PHOTOS[4]}
+              alt="Parents with Aditiri"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </motion.div>
+
+        {/* Parents & Grandparents */}
+        <div className="grid sm:grid-cols-2 gap-8 sm:gap-12 mb-8">
+          {/* Parents */}
+          <FamilyCard
+            label={t.parents}
+            female={t.mother}
+            male={t.father}
+            ampersand={t.ampersand}
+          />
+
+          {/* Grandparents */}
+          <FamilyCard
+            label={t.grandparents}
+            female={t.grandfather}
+            male={t.grandfatherMale}
+            ampersand={t.ampersand}
+          />
+        </div>
+
+        {/* Great Grandparents */}
+        <GreatGrandCard
+          label={t.greatgrandparents}
+          female={t.greatgrandmother}
+          male={t.greatgrandfather}
+          ampersand={t.ampersand}
+        />
+      </div>
+    </Section>
   );
 };
 
