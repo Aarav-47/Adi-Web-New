@@ -368,9 +368,6 @@ const Family = () => {
           />
         </div>
 
-      const GreatGrandCard = ({ label, female, male, ampersand }) => {
-  const { lang } = useLang();
-
   return (
     <motion.div
       variants={reveal}
