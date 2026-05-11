@@ -55,7 +55,7 @@ export const T = {
     welcomeMsg: {
       eyebrow: "An Invitation",
       title: "Our Hearts Have a New Home",
-      body: "On the 19th of May, our family unfolds into something more beautiful. We invite you to the sacred Chhathi Samaroh of our beloved Aditiri Arya — an evening of blessings, soft music, gentle laughter and an ocean of love. Your presence is the truest gift we could ever ask for.",
+      body: "Our family cordially invites you to the auspicious Chhathi celebrations of little Aditri Arya on May 19, 2026. Your presence on this evening filled with blessings, sweet music, gentle smiles, and boundless love is the most precious gift we could ever ask for.",
       signoff: "— With love, Vijay & Sushila",
     },
     princess: {
